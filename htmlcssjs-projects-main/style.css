@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h1{
+    font-size: 8rem;
+    color: #fff;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    margin: 0 0 1.3rem 0;
+    cursor: pointer;
+}
+
+.container h1:hover{
+    -webkit-text-stroke: .1rem white;
+    color: transparent;
+    font-size: 8.2rem;
+}
+
+.container a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border: .1rem white solid;
+    padding: .5rem 2rem;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+
+.container a:hover{
+    color: black;
+    background-color: white;
+    font-size: 2rem;
+}
+
+
+/* new topic i learned by these project is min aspect ratio */
+
+@media(min-aspect-ratio:16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}

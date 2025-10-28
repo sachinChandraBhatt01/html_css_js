@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00008bcb;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.loading {
+    width: 3rem;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: loading-anime .8s ease infinite alternate;
+    -webkit-animation: loading-anime .8s ease infinite alternate;
+    box-shadow: .2rem .2rem 1.5rem rgb(55, 55, 55);
+}
+
+.loading-2 {
+    animation-delay: 0.3s;
+}
+
+.loading-3 {
+    animation-delay: 0.4s;
+}
+
+.loading-4 {
+    animation-delay: 0.5s;
+}
+
+@keyframes loading-anime {
+    0% {
+        scale: 1;
+    }
+    50% {
+        width: 2.3rem;
+    }
+    100% {
+        width: 3.3rem;
+    }
+}

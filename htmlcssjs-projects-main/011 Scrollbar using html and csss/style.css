@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    height: 100vh;
+}
+
+.container{
+    background: rgb(7 , 7 , 7);
+    width: 30rem;
+    padding: 30px;
+}
+
+.csroll-div{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(7,7,7);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll-object{
+    padding: 20px;
+}
+
+
+
+
+

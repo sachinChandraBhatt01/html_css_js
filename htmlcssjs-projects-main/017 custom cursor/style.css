@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: "Playfair Display SC", serif;
+}
+
+p{
+    max-width: 700px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    margin-bottom: 40px;
+}
+
+button{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* for js */
+
+.cursor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: yellow;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translate(-50% , -50%);
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+}
+
